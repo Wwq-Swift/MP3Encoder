@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2306CC42459266A008EF3AB /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2306CC32459266A008EF3AB /* libmp3lame.a */; };
+		C23E78CB245910E800096A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E78CA245910E800096A54 /* AppDelegate.swift */; };
+		C23E78CD245910E800096A54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E78CC245910E800096A54 /* SceneDelegate.swift */; };
+		C23E78CF245910E800096A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E78CE245910E800096A54 /* ViewController.swift */; };
+		C23E78D2245910E800096A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23E78D0245910E800096A54 /* Main.storyboard */; };
+		C23E78D4245910EB00096A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23E78D3245910EB00096A54 /* Assets.xcassets */; };
+		C23E78D7245910EB00096A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23E78D5245910EB00096A54 /* LaunchScreen.storyboard */; };
+		C23E78E2245910EC00096A54 /* MP3EncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E78E1245910EC00096A54 /* MP3EncoderTests.swift */; };
+		C23E78ED245910EC00096A54 /* MP3EncoderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E78EC245910EC00096A54 /* MP3EncoderUITests.swift */; };
+		C23E7900245919FD00096A54 /* mp3_encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C23E78FF245919FD00096A54 /* mp3_encoder.cpp */; };
+		C28AF3A724596F7A0044A7FF /* CModel.c in Sources */ = {isa = PBXBuildFile; fileRef = C28AF3A624596F7A0044A7FF /* CModel.c */; };
+		C28AF3AB24597DE80044A7FF /* vocal.pcm in Resources */ = {isa = PBXBuildFile; fileRef = C28AF3AA24597DE80044A7FF /* vocal.pcm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C23E78DE245910EC00096A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23E78BF245910E800096A54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23E78C6245910E800096A54;
+			remoteInfo = MP3Encoder;
+		};
+		C23E78E9245910EC00096A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23E78BF245910E800096A54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23E78C6245910E800096A54;
+			remoteInfo = MP3Encoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2306CC12459266A008EF3AB /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		C2306CC32459266A008EF3AB /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		C23E78C7245910E800096A54 /* MP3Encoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MP3Encoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23E78CA245910E800096A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C23E78CC245910E800096A54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C23E78CE245910E800096A54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C23E78D1245910E800096A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C23E78D3245910EB00096A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C23E78D6245910EB00096A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C23E78D8245910EB00096A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C23E78DD245910EC00096A54 /* MP3EncoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MP3EncoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23E78E1245910EC00096A54 /* MP3EncoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP3EncoderTests.swift; sourceTree = "<group>"; };
+		C23E78E3245910EC00096A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C23E78E8245910EC00096A54 /* MP3EncoderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MP3EncoderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23E78EC245910EC00096A54 /* MP3EncoderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP3EncoderUITests.swift; sourceTree = "<group>"; };
+		C23E78EE245910EC00096A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C23E78FB245918E900096A54 /* MP3Encoder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MP3Encoder-Bridging-Header.h"; sourceTree = "<group>"; };
+		C23E78FF245919FD00096A54 /* mp3_encoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mp3_encoder.cpp; sourceTree = "<group>"; };
+		C28AF34D245957410044A7FF /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		C28AF35124595A940044A7FF /* mp3_encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mp3_encoder.hpp; sourceTree = "<group>"; };
+		C28AF3A524596F7A0044A7FF /* CModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CModel.h; sourceTree = "<group>"; };
+		C28AF3A624596F7A0044A7FF /* CModel.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CModel.c; sourceTree = "<group>"; };
+		C28AF3A824596FE90044A7FF /* CBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBridging.h; sourceTree = "<group>"; };
+		C28AF3AA24597DE80044A7FF /* vocal.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = vocal.pcm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C23E78C4245910E800096A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2306CC42459266A008EF3AB /* libmp3lame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23E78DA245910EC00096A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23E78E5245910EC00096A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2306CBE2459266A008EF3AB /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				C2306CBF2459266A008EF3AB /* include */,
+				C2306CC22459266A008EF3AB /* lib */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		C2306CBF2459266A008EF3AB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C2306CC02459266A008EF3AB /* lame */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C2306CC02459266A008EF3AB /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				C2306CC12459266A008EF3AB /* lame.h */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		C2306CC22459266A008EF3AB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C2306CC32459266A008EF3AB /* libmp3lame.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		C23E78BE245910E800096A54 = {
+			isa = PBXGroup;
+			children = (
+				C23E78C9245910E800096A54 /* MP3Encoder */,
+				C23E78E0245910EC00096A54 /* MP3EncoderTests */,
+				C23E78EB245910EC00096A54 /* MP3EncoderUITests */,
+				C23E78C8245910E800096A54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C23E78C8245910E800096A54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23E78C7245910E800096A54 /* MP3Encoder.app */,
+				C23E78DD245910EC00096A54 /* MP3EncoderTests.xctest */,
+				C23E78E8245910EC00096A54 /* MP3EncoderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23E78C9245910E800096A54 /* MP3Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				C28AF3A924597DE80044A7FF /* resource */,
+				C2306CBE2459266A008EF3AB /* lame */,
+				C23E78CA245910E800096A54 /* AppDelegate.swift */,
+				C23E78CC245910E800096A54 /* SceneDelegate.swift */,
+				C23E78CE245910E800096A54 /* ViewController.swift */,
+				C23E78D0245910E800096A54 /* Main.storyboard */,
+				C23E78D3245910EB00096A54 /* Assets.xcassets */,
+				C23E78D5245910EB00096A54 /* LaunchScreen.storyboard */,
+				C23E78D8245910EB00096A54 /* Info.plist */,
+				C28AF3A824596FE90044A7FF /* CBridging.h */,
+				C28AF3A524596F7A0044A7FF /* CModel.h */,
+				C28AF3A624596F7A0044A7FF /* CModel.c */,
+				C28AF35124595A940044A7FF /* mp3_encoder.hpp */,
+				C23E78FF245919FD00096A54 /* mp3_encoder.cpp */,
+				C23E78FB245918E900096A54 /* MP3Encoder-Bridging-Header.h */,
+				C28AF34D245957410044A7FF /* module.map */,
+			);
+			path = MP3Encoder;
+			sourceTree = "<group>";
+		};
+		C23E78E0245910EC00096A54 /* MP3EncoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				C23E78E1245910EC00096A54 /* MP3EncoderTests.swift */,
+				C23E78E3245910EC00096A54 /* Info.plist */,
+			);
+			path = MP3EncoderTests;
+			sourceTree = "<group>";
+		};
+		C23E78EB245910EC00096A54 /* MP3EncoderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C23E78EC245910EC00096A54 /* MP3EncoderUITests.swift */,
+				C23E78EE245910EC00096A54 /* Info.plist */,
+			);
+			path = MP3EncoderUITests;
+			sourceTree = "<group>";
+		};
+		C28AF3A924597DE80044A7FF /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				C28AF3AA24597DE80044A7FF /* vocal.pcm */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C23E78C6245910E800096A54 /* MP3Encoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23E78F1245910EC00096A54 /* Build configuration list for PBXNativeTarget "MP3Encoder" */;
+			buildPhases = (
+				C23E78C3245910E800096A54 /* Sources */,
+				C23E78C4245910E800096A54 /* Frameworks */,
+				C23E78C5245910E800096A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MP3Encoder;
+			productName = MP3Encoder;
+			productReference = C23E78C7245910E800096A54 /* MP3Encoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C23E78DC245910EC00096A54 /* MP3EncoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23E78F4245910EC00096A54 /* Build configuration list for PBXNativeTarget "MP3EncoderTests" */;
+			buildPhases = (
+				C23E78D9245910EC00096A54 /* Sources */,
+				C23E78DA245910EC00096A54 /* Frameworks */,
+				C23E78DB245910EC00096A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C23E78DF245910EC00096A54 /* PBXTargetDependency */,
+			);
+			name = MP3EncoderTests;
+			productName = MP3EncoderTests;
+			productReference = C23E78DD245910EC00096A54 /* MP3EncoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C23E78E7245910EC00096A54 /* MP3EncoderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23E78F7245910EC00096A54 /* Build configuration list for PBXNativeTarget "MP3EncoderUITests" */;
+			buildPhases = (
+				C23E78E4245910EC00096A54 /* Sources */,
+				C23E78E5245910EC00096A54 /* Frameworks */,
+				C23E78E6245910EC00096A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C23E78EA245910EC00096A54 /* PBXTargetDependency */,
+			);
+			name = MP3EncoderUITests;
+			productName = MP3EncoderUITests;
+			productReference = C23E78E8245910EC00096A54 /* MP3EncoderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23E78BF245910E800096A54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = kris.wang;
+				TargetAttributes = {
+					C23E78C6245910E800096A54 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					C23E78DC245910EC00096A54 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C23E78C6245910E800096A54;
+					};
+					C23E78E7245910EC00096A54 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C23E78C6245910E800096A54;
+					};
+				};
+			};
+			buildConfigurationList = C23E78C2245910E800096A54 /* Build configuration list for PBXProject "MP3Encoder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C23E78BE245910E800096A54;
+			productRefGroup = C23E78C8245910E800096A54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C23E78C6245910E800096A54 /* MP3Encoder */,
+				C23E78DC245910EC00096A54 /* MP3EncoderTests */,
+				C23E78E7245910EC00096A54 /* MP3EncoderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C23E78C5245910E800096A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28AF3AB24597DE80044A7FF /* vocal.pcm in Resources */,
+				C23E78D7245910EB00096A54 /* LaunchScreen.storyboard in Resources */,
+				C23E78D4245910EB00096A54 /* Assets.xcassets in Resources */,
+				C23E78D2245910E800096A54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23E78DB245910EC00096A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23E78E6245910EC00096A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C23E78C3245910E800096A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23E78CF245910E800096A54 /* ViewController.swift in Sources */,
+				C28AF3A724596F7A0044A7FF /* CModel.c in Sources */,
+				C23E7900245919FD00096A54 /* mp3_encoder.cpp in Sources */,
+				C23E78CB245910E800096A54 /* AppDelegate.swift in Sources */,
+				C23E78CD245910E800096A54 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23E78D9245910EC00096A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23E78E2245910EC00096A54 /* MP3EncoderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23E78E4245910EC00096A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23E78ED245910EC00096A54 /* MP3EncoderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C23E78DF245910EC00096A54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C23E78C6245910E800096A54 /* MP3Encoder */;
+			targetProxy = C23E78DE245910EC00096A54 /* PBXContainerItemProxy */;
+		};
+		C23E78EA245910EC00096A54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C23E78C6245910E800096A54 /* MP3Encoder */;
+			targetProxy = C23E78E9245910EC00096A54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C23E78D0245910E800096A54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23E78D1245910E800096A54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C23E78D5245910EB00096A54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23E78D6245910EB00096A54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C23E78EF245910EC00096A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C23E78F0245910EC00096A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C23E78F2245910EC00096A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NMU4WTM2C;
+				INFOPLIST_FILE = MP3Encoder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MP3Encoder/lame/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.wepokergroup.MP3Encoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)MP3Encoder";
+				SWIFT_OBJC_BRIDGING_HEADER = "MP3Encoder/MP3Encoder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C23E78F3245910EC00096A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NMU4WTM2C;
+				INFOPLIST_FILE = MP3Encoder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MP3Encoder/lame/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.wepokergroup.MP3Encoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)MP3Encoder";
+				SWIFT_OBJC_BRIDGING_HEADER = "MP3Encoder/MP3Encoder-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C23E78F5245910EC00096A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NMU4WTM2C;
+				INFOPLIST_FILE = MP3EncoderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.wepokergroup.MP3EncoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MP3Encoder.app/MP3Encoder";
+			};
+			name = Debug;
+		};
+		C23E78F6245910EC00096A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NMU4WTM2C;
+				INFOPLIST_FILE = MP3EncoderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.wepokergroup.MP3EncoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MP3Encoder.app/MP3Encoder";
+			};
+			name = Release;
+		};
+		C23E78F8245910EC00096A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NMU4WTM2C;
+				INFOPLIST_FILE = MP3EncoderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.wepokergroup.MP3EncoderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MP3Encoder;
+			};
+			name = Debug;
+		};
+		C23E78F9245910EC00096A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NMU4WTM2C;
+				INFOPLIST_FILE = MP3EncoderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.wepokergroup.MP3EncoderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MP3Encoder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C23E78C2245910E800096A54 /* Build configuration list for PBXProject "MP3Encoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23E78EF245910EC00096A54 /* Debug */,
+				C23E78F0245910EC00096A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23E78F1245910EC00096A54 /* Build configuration list for PBXNativeTarget "MP3Encoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23E78F2245910EC00096A54 /* Debug */,
+				C23E78F3245910EC00096A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23E78F4245910EC00096A54 /* Build configuration list for PBXNativeTarget "MP3EncoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23E78F5245910EC00096A54 /* Debug */,
+				C23E78F6245910EC00096A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23E78F7245910EC00096A54 /* Build configuration list for PBXNativeTarget "MP3EncoderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23E78F8245910EC00096A54 /* Debug */,
+				C23E78F9245910EC00096A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C23E78BF245910E800096A54 /* Project object */;
+}

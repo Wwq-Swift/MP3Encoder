@@ -1,0 +1,12 @@
+//
+//  module.h
+//  MP3Encoder
+//
+//  Created by kris.wang on 2020/4/29.
+//  Copyright © 2020 kris.wang. All rights reserved.
+//
+
+module SwiftCpp {
+    header "CBridging.h"
+    export *
+}
